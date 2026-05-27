@@ -294,17 +294,5 @@ Through this project, I gained practical experience in:
 
 
 
----
-
-# 👨‍💻 Author
-
-### Luckwin Subinaya
-
-Full-Stack Developer focused on:
-
-* MERN Stack Development
-* Next.js Applications
-* AI-integrated SaaS platforms
-* Scalable Web Architecture
 
 GitHub: [Luckwin Subinaya GitHub](https://github.com/Luckwin-subinaya?utm_source=chatgpt.com)
