@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: client-backend
+    env: docker
+    dockerfilePath: account-management/Dockerfile
+    plan: free
+    envVars:
+      - key: MONGODB_URI
+        value: "${MONGODB_URI}"
+      - key: PORT
+        value: "4000"
+
+  - type: web
+    name: client-frontend
+    env: docker
+    dockerfilePath: client-ui/Dockerfile
+    plan: free
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        value: "https://client-backend.onrender.com/api"

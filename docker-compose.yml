@@ -1,0 +1,31 @@
+services:
+  mongo:
+    image: mongo:7
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+  backend:
+    build:
+      context: ./account-management
+      dockerfile: Dockerfile
+    env_file:
+      - ./account-management/.env
+    ports:
+      - 4000:4000
+    depends_on:
+      - mongo
+
+  frontend:
+    build:
+      context: ./client-ui
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+volumes:
+  mongo-data:

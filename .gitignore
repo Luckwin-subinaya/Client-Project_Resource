@@ -1,0 +1,33 @@
+# Environment variables (never commit secrets)
+.env
+.env.local
+.env.*.local
+
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# Next.js
+.next/
+out/
+.cache/
+*.tsbuildinfo
+
+# Build & dist
+dist/
+build/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# OS
+Thumbs.db
+.env.prod
+.env.test
