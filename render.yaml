@@ -3,6 +3,7 @@ services:
     name: client-backend
     env: docker
     dockerfilePath: account-management/Dockerfile
+    dockerContext: account-management
     plan: free
     envVars:
       - key: MONGODB_URI
@@ -14,6 +15,7 @@ services:
     name: client-frontend
     env: docker
     dockerfilePath: client-ui/Dockerfile
+    dockerContext: client-ui
     plan: free
     envVars:
       - key: NEXT_PUBLIC_API_URL
