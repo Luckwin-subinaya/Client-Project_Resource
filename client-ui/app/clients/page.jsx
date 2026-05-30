@@ -4,7 +4,7 @@ import EntityTable from "../components/EntityTable";
 import { FaChartBar, FaUsers, FaProjectDiagram } from "react-icons/fa";
 import { AreaChart, Area, CartesianGrid, XAxis, YAxis, Tooltip, ResponsiveContainer } from "recharts";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000/api";
+const API = "/api";
 
 export default function ClientsPage() {
   const [clients, setClients] = useState([]);

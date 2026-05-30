@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa";
 import { AreaChart, Area, CartesianGrid, XAxis, Tooltip, ResponsiveContainer, YAxis } from "recharts";
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:4000/api";
+const API = "/api";
 
 export default function Dashboard() {
   const [clients, setClients] = useState([]);

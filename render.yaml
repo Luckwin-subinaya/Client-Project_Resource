@@ -16,5 +16,7 @@ services:
     dockerfilePath: client-ui/Dockerfile
     plan: free
     envVars:
+      - key: BACKEND_API_URL
+        value: "https://client-project-resource.onrender.com/api"
       - key: NEXT_PUBLIC_API_URL
         value: "https://client-project-resource.onrender.com/api"
